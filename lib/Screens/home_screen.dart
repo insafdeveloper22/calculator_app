@@ -13,7 +13,7 @@ class _HomeScreenState extends State<HomeScreen> {
   var userInput = '';
   var answer = '';
 
-void clear() {
+  void clear() {
     setState(() {
       userInput = '';
       answer = '';
@@ -46,8 +46,8 @@ void clear() {
       answer = "Error";
     }
   }
-  @override
 
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
@@ -178,9 +178,6 @@ void clear() {
       ),
     );
   }
-
-
-  
 
   Widget btn(
     String text, {
